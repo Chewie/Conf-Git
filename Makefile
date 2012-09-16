@@ -1,7 +1,2 @@
-all: slidy
-
-slidy:
-	pandoc -t slidy -s test.markdown --toc -o lol.html
-
-beamer:
-	pandoc -t beamer -s test.markdown --toc -V theme:Warsaw -o test.pdf
+all:
+	pandoc -t beamer -s git.markdown --toc -V theme:Warsaw -o git.pdf

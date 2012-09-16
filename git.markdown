@@ -58,4 +58,6 @@
 
 ### Tracking branches
 
+### Merging branches
+
 ### Deleting branches

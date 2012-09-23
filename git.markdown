@@ -6,7 +6,6 @@
 ## In the beginning...
 
 ### cpold
- * lol
 
 ### diff and patch
 
@@ -32,7 +31,7 @@
 
 ## The basics
 
-### Creating an repository
+### Creating a repository
 
 ### Adding files to the repository
 
@@ -49,6 +48,8 @@
 ### Pushing
 
 ### Resolving conflicts
+
+### Tagging a commit
 
 ## Branches
 

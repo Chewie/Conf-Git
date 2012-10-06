@@ -1,11 +1,19 @@
 % Effective versioning with git
-% Kévin "Chewie" Sztern
+% Kévin "Chewie" Sztern and Armand "Marman" Leclercq
 
 # A brief (non exhaustive) history of versioning
 
 ## In the beginning...
 
 ### cpold
+* A really simple syntax
+* A really simple concept
+* Really simple to put into action
+    * `cp myFile.c myFile.c.old`
+    * `cp myFile.c myFile.c.OLD`
+* Really simple to improve
+    * `cp myFile.c myFile.c.2012-10-..`
+    * `tar cvjf project.old *.c`
 
 ### diff and patch
 

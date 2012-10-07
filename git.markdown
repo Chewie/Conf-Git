@@ -16,6 +16,19 @@
     * `tar cvjf project.old *.c`
 
 ### diff and patch
+* An improvment from `cpold` method
+* Create a patch from the difference between the old and the new file.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+diff oldFile newFile > file.patch
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+* Apply it when given directly from a collaborator
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+patch oldFile -i file.patch
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ## Then : centralized versioning
 

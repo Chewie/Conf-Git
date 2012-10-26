@@ -29,6 +29,7 @@
 ## In the beginning...
 
 ### cpold
+
 * A really simple syntax
 * A really simple concept
 * Really simple to put into action
@@ -39,6 +40,7 @@
     * `tar cvjf project.old *.c`
 
 ### diff and patch
+
 * An improvment from `cpold` method
 * Create a patch from the difference between the old and the new file.
 
@@ -100,7 +102,38 @@ patch oldFile -i file.patch
 
 ### Plumbing and porcelain
 
+* Git provides two sets of commands
+* (Ugly) commands that operate on the internals of your repository: the plumbing
+* (User friendly) commands using the plumbing: the porcelain
+* Don't bother with plumbing unless you're a plumber.
+
 ### Three phase commits : the staging area
+
+#### With other VCS
+
+For most VCS, tracked data live in two places: the current working directory,
+and what has been committed (the datastore). Committing means adding to the
+datastore everything from the working directory that differs from the previous
+datastore (Newly tracked data, modified data).
+
+#### With git
+
+For git, there is a third step inbetween: the staging area. A tracked file
+being modified will not be commited unless you explicitly stage it. While this
+may appear bothersome, it allows for finer granularity and atomic commits.
+
+### Commit early, commit often
+
+#### Rationale
+
+Since git is distributed, a commit stays local until you push it. That means
+you don't risk ruining other people's work with a temporary commit.
+
+#### Commits as checkpoints
+
+Commit each time you reach a "checkpoint" in your code, when you want to be
+able to return to that state in a future time. When a feature is complete and
+you want to share it, push all the commits you made locally.
 
 ## The basics
 

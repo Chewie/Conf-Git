@@ -59,7 +59,17 @@ patch oldFile -i file.patch
 
 ### git
 
+* Written by Linus Torvalds and released in 2005
+* Peer to peer approach
+* Each client has a repository in its own right
+* Can pull and push from/to any other client
+* Commiting and sharing are two separate processes
+
 ### a word on mercurial
+
+* Released around the same time as git (12 days later!)
+* Overall quite similar and as powerful as git
+* We won't discuss it, but know that it exists
 
 # Using git
 

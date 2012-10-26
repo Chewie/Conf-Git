@@ -139,9 +139,48 @@ you want to share it, push all the commits you made locally.
 
 ### Creating a repository
 
+~~~
+$ mkdir myproject
+$ cd myproject
+$ git init
+Initialized empty Git repository in myproject/.git/
+$ ls -a
+. .. .git
+$ # Start working...
+~~~
+
 ### Adding files to the repository
 
+~~~
+$ vim main.c # Let's create main.c
+$ git add main.c # File is untracked, we need to add it
+$ git commit -m "Added main.c"
+$ vim main.c # We modify main.c
+$ git add main.c # We still need to stage it
+$ git commit -m "Updated main.c"
+~~~
+
+### Checking the state of the three phases
+
+~~~
+$ git status # You don't need much else
+~~~
+
+I suggest adding the following to your .gitconfig:
+
+~~~
+[color]
+    ui = true
+[pager]
+    status = false
+~~~
+
 ### Viewing the history
+
+~~~
+$ git log # View commit history
+$ git shortlog -ns # Count number of commits by author
+~~~
 
 ## Working with other people
 

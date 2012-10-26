@@ -1,6 +1,29 @@
 % Effective versioning with git
 % Kévin "Chewie" Sztern and Armand "Marman" Leclercq
 
+# Why use versioning?
+
+## To keep track of the changes in your code
+
+### What I want
+
+* What was the code like in the previous release?
+* When did it work for the last time?
+* When was that file changed?
+* Let's work on a new feature!
+* (3 hours later...)
+* It's actually crap, scratch that.
+
+## To share your code with others
+
+### What I also want
+
+* Let's work together on a feature!
+* A friend just made a change, I want to integrate it.
+* Hey world, here is my project!
+* Someone wants to contribute to my project! :D
+* Who coded that pile of cr\*p?
+
 # A brief (non exhaustive) history of versioning
 
 ## In the beginning...

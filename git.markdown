@@ -30,11 +30,30 @@ diff oldFile newFile > file.patch
 patch oldFile -i file.patch
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+### SCCS and RCS
+
+* First tools to keep track of different versions of your code.
+* Store versions as deltas of previous versions
+* Local only tool, all work must be on the same computer
+* Essentially wrappers around diff (not really, but you get my point)
+
 ## Then : centralized versioning
 
 ### cvs
 
+* Versionning tool written in 1986
+* Originally built on RCS: Store tracked files as RCS files
+* Client/server approach
+* A single shared repository
+* Clients work on the latest revision
+
 ### svn
+
+* Improvement of cvs released in 2000
+* Originally stored files in a Berkeley DB, now in FSFS
+* Atomic commits
+* Support for renaming/moving tracked files
+* Was king for a long time
 
 ## Now : distributed versioning
 

@@ -223,7 +223,20 @@ Cloning is a shortcut for the following actions:
 
 ### Resolving conflicts
 
+* Don't fear the conflicts! (you can take my hand...)
+* Conflicts happen when a file has been modified by two people at the same time
+* Git modifies each file with a conflict to show both versions
+* Just edit the files then add them with `git add`
+* Resolve the conflict with `git commit`
+* That's all!
+
 ### Tagging a commit
+
+* Git has the ability to mark certains commits as important
+* Typically, release versions like `v1.0`
+* Two types of tags: lightweight and annotated
+* Syntax: `git tag <tagname> [commit] [-m <message>] [fuckload of options]`
+* Tags must be pushed explicitly with `git push --tags`
 
 ## Branches
 

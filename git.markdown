@@ -186,11 +186,40 @@ $ git shortlog -ns # Count number of commits by author
 
 ### Remote repositories
 
+* You can have as many remotes as you like!
+* By default, the remote you cloned from is called `origin`
+* One super command: `git remote`
+
+~~~
+$ git remote # Show my remotes
+github
+bitbucket
+$ git remote add acu <url> # Add a new remote
+$ git remote rename acu ACU # Change remote name
+$ git remote rm bitbucket # Remove a remote
+~~~
+
 ### Cloning
+
+Cloning is a shortcut for the following actions:
+
+* Initiliaze an empty git repository
+* Create a remote called origin from the cloned repo
+* Create remote tracking branches for each branch in origin
+* Checkout an initial branch forked from the active branch in origin
 
 ### Pulling
 
+* Incorporate commits from a remote into the current branch
+* Syntax: `git pull [options] [remote] [refspec]`
+* Refspec can be a remote branch
+* For now, juste remember the remote argument
+
 ### Pushing
+
+* Update commits from your repo to a remote
+* Syntax is complicated, just remember this:
+* `git push [remote [branch]]`
 
 ### Resolving conflicts
 

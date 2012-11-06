@@ -240,12 +240,78 @@ Cloning is a shortcut for the following actions:
 
 ## Branches
 
+### What are branches?
+
+* Branches allow you to split the history of commits
+* You can work on a feature without messing up everybody's work
+* After your feature is completed, you can merge branches together
+
+~~~
+      *----*---*--
+     /            \
+-------------------*-----*--
+             \          /
+              *--*---*--
+~~~
+
 ### Branches are cheap
+
+* Git's branching model is its killer feature
+* Before git, branching was a big deal
+* With git, a common workflow involves several merges per day
 
 ### Creating and switching to branches
 
+~~~
+$ git branch feature1
+$ git checkout feature1
+Switched to branch 'feature1'
+$ # Remember this shortcut:
+$ git checkout -b feature2
+Switched to a new branch 'feature2'
+~~~
+
 ### Tracking branches
+
+* A remote branch can be synchronized to a local branch
+* When on a tracking branch, `git push` and `git pull` work without arguments
+* A branch created from a remote branch is tracking by default
+* When creating a remote branch from a local branch, you need to track
+  explicitly
+
+~~~
+$ git checkout feature1 # We have a local branch feature1
+Switched to branch 'feature1'
+$ git push -u origin feature1
+[...]
+To origin
+ * [new branch]      feature1 -> feature1
+ Branch feature1 set up to track remote branch feature1 from origin.
+~~~
 
 ### Merging branches
 
+~~~
+$ git checkout master # We merge *into* master
+$ git merge feature1
+$ # If no conflict, great! Else, go resolve them!
+~~~
+
 ### Deleting branches
+
+* `git branch -d` will only delete a branch if the branch you're deleting from
+  is already past it, e.g. you already merged it
+* `git branch -D` if you want to delete and discard everything from a branch
+
+## Conclusion
+
+### What you've learned
+
+* As always, don't just learn the syntax, try to understand the meaning
+* `git help` is your friend
+
+### Ressources
+
+* http://gitimmersion.com/
+* http://git-scm.com/book
+* http://gitref.org/

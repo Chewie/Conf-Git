@@ -180,6 +180,15 @@ I suggest adding the following to your .gitconfig:
 ~~~
 $ git log # View commit history
 $ git shortlog -ns # Count number of commits by author
+$ git log --graph --decorate --all # ohmagash so pretty
+~~~
+
+### Going back to a previous commit
+
+~~~
+$ git checkout HEAD~3 # Visit the history 3 commits before the last one
+$ git checkout <sha1> # Visit the history of the commit identified by sha1
+$ git checkout HEAD # Go back to the last commit made
 ~~~
 
 ## Working with other people

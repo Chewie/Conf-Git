@@ -188,7 +188,7 @@ $ git log --graph --decorate --all # ohmagash so pretty
 ~~~
 $ git checkout HEAD~3 # Visit the history 3 commits before the last one
 $ git checkout <sha1> # Visit the history of the commit identified by sha1
-$ git checkout HEAD # Go back to the last commit made
+$ git checkout master # Go back to the last commit made
 ~~~
 
 ## Working with other people
